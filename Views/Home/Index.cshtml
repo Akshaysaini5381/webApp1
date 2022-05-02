@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*@model List<webApp1.Dbprofile.EMPLOYEE2>*@
+
+
+@*<h1>@ViewBag.name</h1>
+    <h1>@ViewBag.name1</h1>
+    <h1>@ViewBag.name2</h1>
+    <h1>@ViewBag.name3</h1>*@
+@*<h1>@ViewData["name"]</h1>
+<h1>@ViewData["number"]</h1>
+<h1>@ViewData["float"]</h1>*@
+
+@*<h1>@TempData["name"]</h1>
+<h1>@TempData["number"]</h1>
+<h1>@TempData["float"]</h1>*@
+<ol type="1">
+    @foreach (var item in ViewBag.name)
+    {
+        <li>@item</li>
+
+    }
+</ol>
+
+<ol type="1">
+    @foreach (var item in (List<string>)ViewData["name"])
+    {
+        <li>@item</li>
+
+    }
+</ol>
+
+<ol type="1">
+    @foreach (var item in (List<string>)TempData["names"])
+    {
+        <li>@item</li>
+
+    }
+</ol>
+
+<h1>deepak</h1>
+
